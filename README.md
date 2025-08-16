@@ -10,7 +10,7 @@ Task : Network Packet Capture and Analysis using Wireshark
 - Export captured data as .pcap file
 - Document findings in a comprehensive analysis report
 
-## 🛠️ Tools and Environment
+## Tools and Environment
 
 | Tool             | Version | Purpose                          |
 |------------------|---------|----------------------------------|
@@ -168,16 +168,36 @@ Task : Network Packet Capture and Analysis using Wireshark
 
 ## Interview Preparation
 
-### Key Questions and Answers
+**1. What is Wireshark used for?**  
+Wireshark is a network protocol analyzer. It is used to capture, inspect, and analyze network traffic in real time for troubleshooting, education, security monitoring, and protocol development.
 
-**Q: What is Wireshark used for?**
-A: Network protocol analysis, troubleshooting, security monitoring, and educational purposes to understand network communications.
+**2. What is a packet?**  
+A packet is a basic unit of data sent across networks. It contains control information (headers) and the payload (actual data), allowing communication between devices using various protocols.
 
-**Q: What is the difference between TCP and UDP?**
-A: TCP is connection-oriented, reliable, and provides error checking, while UDP is connectionless, faster, but doesn't guarantee delivery.
+**3. How to filter packets in Wireshark?**  
+In Wireshark, you can filter packets using the display filter bar. Examples:
+- `http` — Shows only HTTP packets  
+- `dns` — Shows only DNS queries and responses  
+- `tcp` or `udp` — Filters by protocol  
+You can also use logical operators (`and`, `or`, `not`) for advanced filtering.
 
-**Q: How can packet capture help in cybersecurity?**
-A: It enables detection of malicious traffic, network intrusion analysis, forensic investigation, and understanding of attack patterns.
+**4. What is the difference between TCP and UDP?**  
+- **TCP** is connection-oriented, reliable, and ensures data arrives in order; it uses error correction and acknowledgments.
+- **UDP** is connectionless, faster, but doesn’t guarantee delivery or order; it has lower overhead and is suitable for real-time applications.
+
+**5. What is a DNS query packet?**  
+A DNS query packet is a request sent to a DNS server to resolve a domain name (like www.example.com) into its IP address. It usually uses UDP port 53.
+
+**6. How can packet capture help in troubleshooting?**  
+Packet capture reveals exactly what’s happening on the network, allowing you to identify problems such as dropped packets, delays, misconfigured devices, or malicious activities by analyzing live traffic.
+
+**7. What is a protocol?**  
+A protocol is a standardized set of rules that specifies how data is formatted, transmitted, and received in a network. Examples include TCP, UDP, HTTP, DNS, etc.
+
+**8. Can Wireshark decrypt encrypted traffic?**  
+Wireshark cannot decrypt encrypted traffic (like HTTPS/TLS) unless you provide the necessary decryption keys. Without them, you can only analyze metadata or handshake information, not the encrypted content itself.
+
+***
 
 ## 🔗 Additional Resources
 
