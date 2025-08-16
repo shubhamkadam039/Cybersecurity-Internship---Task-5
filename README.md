@@ -127,6 +127,7 @@ Task : Network Packet Capture and Analysis using Wireshark
    - Launch Wireshark
    - Select active network interface
    - Click "Start capturing packets"
+    ```
 3. **Generate Traffic**
    ```bash
    # DNS queries
