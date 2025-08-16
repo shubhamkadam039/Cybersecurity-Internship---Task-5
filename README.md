@@ -88,7 +88,7 @@ Task : Network Packet Capture and Analysis using Wireshark
   - Network reachability testing
   - Error message reporting
 
-## 📈 Key Findings
+## Key Findings
 
 ### Traffic Patterns
 - **Most Active Protocol**: TCP
@@ -108,7 +108,7 @@ Task : Network Packet Capture and Analysis using Wireshark
 3. **Keep-Alive Connections**: HTTP persistent connections observed
 4. **Port Usage**: Standard ports (80, 443, 53) heavily utilized
 
-## 📝 Wireshark Display Filters Used
+## Wireshark Display Filters Used
 
 | Filter              | Purpose                        | Example                |
 |---------------------|-------------------------------|------------------------|
@@ -117,33 +117,8 @@ Task : Network Packet Capture and Analysis using Wireshark
 | `tcp.port == 443`   | Show HTTPS traffic             | Secure web connections |
 | `ip.addr == 192.168.1.1` | Show traffic to/from specific IP | Router communication   |
 | `icmp`              | Show ping/diagnostics          | Network tests          |
-
-## 🚀 How to Reproduce
-
-1. **Install Wireshark**
-   # On Windows: Download from wireshark.org
-   ```
-2. **Start Packet Capture**
-   - Launch Wireshark
-   - Select active network interface
-   - Click "Start capturing packets"
-    ```
-3. **Generate Traffic**
-   ```bash
-   # DNS queries
-   nslookup google.com
-   ping github.com
-
-   # Web browsing
-   curl -I https://www.example.com
-   ```
-4. **Analyze Capture**
-   - Use display filters to isolate protocols
-   - Examine packet details and headers
-   - Export capture as .pcap file
-   ```
    
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 ### Technical Skills Gained
 - **Network Protocol Understanding**: Deep dive into TCP/IP stack
